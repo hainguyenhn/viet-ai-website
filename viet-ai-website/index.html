@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Việt AI — AI Assistant for Vietnamese Americans</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; color: #1a1a1a; line-height: 1.6; }
+    a { color: #dc2626; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav { background: #fff; border-bottom: 1px solid #e5e7eb; padding: 1rem 2rem; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+    nav .logo { font-size: 1.25rem; font-weight: 700; color: #1a1a1a; }
+    nav .links { display: flex; gap: 1.5rem; font-size: 0.9rem; }
+
+    .hero { background: linear-gradient(135deg, #fff5f5 0%, #fff 100%); padding: 5rem 2rem; text-align: center; }
+    .hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); font-weight: 800; color: #1a1a1a; margin-bottom: 1rem; }
+    .hero h1 span { color: #dc2626; }
+    .hero p { font-size: 1.2rem; color: #4b5563; max-width: 600px; margin: 0 auto 2rem; }
+    .hero .cta { display: inline-block; background: #dc2626; color: #fff; padding: 0.9rem 2.5rem; border-radius: 0.75rem; font-weight: 600; font-size: 1rem; }
+    .hero .cta:hover { background: #b91c1c; text-decoration: none; }
+
+    section { padding: 4rem 2rem; max-width: 960px; margin: 0 auto; }
+    section h2 { font-size: 1.75rem; font-weight: 700; margin-bottom: 1.5rem; color: #1a1a1a; }
+
+    .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 1.5rem; }
+    .feature { background: #f9fafb; border-radius: 1rem; padding: 1.5rem; }
+    .feature .icon { font-size: 2rem; margin-bottom: 0.75rem; }
+    .feature h3 { font-size: 1rem; font-weight: 600; margin-bottom: 0.5rem; }
+    .feature p { font-size: 0.9rem; color: #6b7280; }
+
+    .plans { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; }
+    .plan { border: 2px solid #e5e7eb; border-radius: 1rem; padding: 1.5rem; position: relative; }
+    .plan.popular { border-color: #dc2626; }
+    .plan .badge { position: absolute; top: -0.75rem; left: 50%; transform: translateX(-50%); background: #dc2626; color: #fff; font-size: 0.75rem; font-weight: 600; padding: 0.2rem 0.75rem; border-radius: 999px; white-space: nowrap; }
+    .plan h3 { font-size: 1.1rem; font-weight: 700; margin-bottom: 0.25rem; }
+    .plan .price { font-size: 2rem; font-weight: 800; color: #dc2626; margin: 0.5rem 0; }
+    .plan .price span { font-size: 0.9rem; font-weight: 400; color: #6b7280; }
+    .plan ul { list-style: none; margin-top: 1rem; font-size: 0.9rem; color: #4b5563; }
+    .plan ul li { padding: 0.3rem 0; }
+    .plan ul li::before { content: "✓ "; color: #16a34a; font-weight: 600; }
+
+    .policy { background: #f9fafb; }
+    .policy section { max-width: 760px; }
+    .policy h2 { font-size: 1.5rem; border-bottom: 2px solid #e5e7eb; padding-bottom: 0.5rem; margin-bottom: 1.25rem; }
+    .policy h3 { font-size: 1rem; font-weight: 600; margin: 1.25rem 0 0.5rem; }
+    .policy p, .policy li { font-size: 0.95rem; color: #4b5563; margin-bottom: 0.5rem; }
+    .policy ul { padding-left: 1.5rem; }
+
+    footer { background: #1a1a1a; color: #9ca3af; text-align: center; padding: 2rem; font-size: 0.9rem; }
+    footer a { color: #9ca3af; }
+  </style>
+</head>
+<body>
+
+<!-- NAV -->
+<nav>
+  <div class="logo">🇻🇳 Việt AI</div>
+  <div class="links">
+    <a href="#features">Features</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#contact">Contact</a>
+    <a href="#privacy">Privacy</a>
+    <a href="#terms">Terms</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>AI Assistant for<br /><span>Vietnamese Americans</span></h1>
+  <p>Get answers about Vietnamese food, US real estate, and everyday life — in Vietnamese, from an AI that understands your community.</p>
+  <a class="cta" href="https://viet-ai.vercel.app">Try Free — 10 Questions on Us</a>
+</div>
+
+<!-- FEATURES -->
+<section id="features">
+  <h2>What Việt AI helps with</h2>
+  <div class="features">
+    <div class="feature">
+      <div class="icon">🍜</div>
+      <h3>Vietnamese Food</h3>
+      <p>Find Asian grocery stores, homemade Vietnamese food sellers, and restaurants near you.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🏠</div>
+      <h3>US Real Estate</h3>
+      <p>First-time homebuying, credit scores, FHA loans, investment properties — explained simply.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🤝</div>
+      <h3>Community Q&A</h3>
+      <p>Any question you'd ask in a Vietnamese-American Facebook group, answered instantly.</p>
+    </div>
+    <div class="feature">
+      <div class="icon">🌟</div>
+      <h3>In Vietnamese</h3>
+      <p>Answers in natural Vietnamese with English terms where needed — like talking to a friend.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing">
+  <h2>Simple, transparent pricing</h2>
+  <div class="plans">
+    <div class="plan">
+      <h3>Free</h3>
+      <div class="price">$0 <span>/ forever</span></div>
+      <ul>
+        <li>10 free questions</li>
+        <li>No credit card needed</li>
+        <li>Full AI quality</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Basic</h3>
+      <div class="price">$4.99 <span>/ month</span></div>
+      <ul>
+        <li>500 questions / month</li>
+        <li>Conversation history</li>
+        <li>Food &amp; community topics</li>
+      </ul>
+    </div>
+    <div class="plan popular">
+      <div class="badge">Most Popular</div>
+      <h3>Pro</h3>
+      <div class="price">$9.99 <span>/ month</span></div>
+      <ul>
+        <li>2,000 questions / month</li>
+        <li>Real estate advice</li>
+        <li>Priority processing</li>
+      </ul>
+    </div>
+    <div class="plan">
+      <h3>Premium</h3>
+      <div class="price">$19.99 <span>/ month</span></div>
+      <ul>
+        <li>Unlimited questions</li>
+        <li>Advanced AI model</li>
+        <li>Deep research mode</li>
+        <li>Priority support</li>
+      </ul>
+    </div>
+  </div>
+  <p style="margin-top:1.5rem; font-size:0.9rem; color:#6b7280;">
+    All paid plans are billed monthly and can be cancelled at any time. Subscriptions are managed securely through Stripe.
+  </p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <h2>Contact Us</h2>
+  <p>For support, billing questions, or general inquiries:</p>
+  <p style="margin-top:0.75rem;"><strong>Email:</strong> <a href="mailto:support@viet-ai.app">support@viet-ai.app</a></p>
+  <p><strong>Website:</strong> <a href="https://viet-ai.vercel.app">viet-ai.vercel.app</a></p>
+  <p style="margin-top:0.75rem; color:#6b7280; font-size:0.9rem;">We typically respond within 24 hours on business days.</p>
+</section>
+
+<!-- POLICIES -->
+<div class="policy">
+
+  <!-- REFUND POLICY -->
+  <section id="refund">
+    <h2>Refund Policy</h2>
+    <p>We want you to be satisfied with Việt AI. Here is our refund policy:</p>
+    <h3>Monthly Subscriptions</h3>
+    <p>You may cancel your subscription at any time. Cancellations take effect at the end of the current billing period — you will retain access until then. We do not offer prorated refunds for partial months.</p>
+    <h3>Refund Requests</h3>
+    <p>If you are unsatisfied with your subscription within the first 7 days of a new paid plan, contact us at <a href="mailto:support@viet-ai.app">support@viet-ai.app</a> and we will issue a full refund.</p>
+    <h3>Free Tier</h3>
+    <p>The free tier (10 questions) requires no payment and is not subject to this policy.</p>
+  </section>
+
+  <!-- PRIVACY POLICY -->
+  <section id="privacy">
+    <h2>Privacy Policy</h2>
+    <p><em>Last updated: May 2026</em></p>
+    <p>Việt AI ("we", "our", "us") is committed to protecting your privacy. This policy explains what data we collect and how we use it.</p>
+    <h3>Information We Collect</h3>
+    <ul>
+      <li><strong>Account data:</strong> name and email address when you register.</li>
+      <li><strong>Usage data:</strong> questions you ask and AI responses, stored to provide conversation history.</li>
+      <li><strong>Billing data:</strong> payment is processed by Stripe. We do not store credit card numbers.</li>
+      <li><strong>Technical data:</strong> browser type, IP address, and usage analytics for service improvement.</li>
+    </ul>
+    <h3>How We Use Your Data</h3>
+    <ul>
+      <li>To provide and improve the AI assistant service.</li>
+      <li>To manage your account and subscription.</li>
+      <li>To send transactional emails (account confirmation, receipts).</li>
+      <li>To aggregate anonymous usage statistics (no personally identifiable information).</li>
+    </ul>
+    <h3>Data Sharing</h3>
+    <p>We do not sell your personal data. We share data only with:</p>
+    <ul>
+      <li><strong>Anthropic</strong> — to process AI queries (your messages are sent to Claude API).</li>
+      <li><strong>Stripe</strong> — to process payments securely.</li>
+      <li><strong>Supabase</strong> — our database and authentication provider.</li>
+    </ul>
+    <h3>Data Retention</h3>
+    <p>We retain your account and conversation data for as long as your account is active. You may request deletion at any time by emailing <a href="mailto:support@viet-ai.app">support@viet-ai.app</a>.</p>
+    <h3>Your Rights</h3>
+    <p>You may request access to, correction of, or deletion of your personal data at any time. Contact us at <a href="mailto:support@viet-ai.app">support@viet-ai.app</a>.</p>
+    <h3>Cookies</h3>
+    <p>We use session cookies for authentication. We do not use advertising or tracking cookies.</p>
+    <h3>Contact</h3>
+    <p>Privacy questions: <a href="mailto:support@viet-ai.app">support@viet-ai.app</a></p>
+  </section>
+
+  <!-- TERMS OF SERVICE -->
+  <section id="terms">
+    <h2>Terms of Service</h2>
+    <p><em>Last updated: May 2026</em></p>
+    <p>By using Việt AI, you agree to these terms. Please read them carefully.</p>
+    <h3>1. Service Description</h3>
+    <p>Việt AI provides an AI-powered question-and-answer service targeted at the Vietnamese-American community. Responses are generated by large language models and are for informational purposes only.</p>
+    <h3>2. Eligibility</h3>
+    <p>You must be at least 13 years old to use this service. By registering, you confirm you meet this requirement.</p>
+    <h3>3. Acceptable Use</h3>
+    <p>You agree not to use Việt AI to:</p>
+    <ul>
+      <li>Violate any applicable laws or regulations.</li>
+      <li>Harass, abuse, or harm others.</li>
+      <li>Attempt to reverse-engineer, scrape, or abuse the service.</li>
+      <li>Use the service for medical, legal, or financial decisions without consulting a qualified professional.</li>
+    </ul>
+    <h3>4. Disclaimer</h3>
+    <p>AI-generated responses are informational only and may contain errors. Always consult licensed professionals for medical, legal, real estate, or financial matters. Việt AI is not liable for decisions made based on AI responses.</p>
+    <h3>5. Subscriptions and Billing</h3>
+    <p>Paid subscriptions are billed monthly through Stripe. You may cancel at any time. See our Refund Policy above for details.</p>
+    <h3>6. Termination</h3>
+    <p>We reserve the right to suspend or terminate accounts that violate these terms.</p>
+    <h3>7. Changes to Terms</h3>
+    <p>We may update these terms. Continued use of the service constitutes acceptance of updated terms.</p>
+    <h3>8. Contact</h3>
+    <p>Questions about these terms: <a href="mailto:support@viet-ai.app">support@viet-ai.app</a></p>
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 Việt AI · AI Assistant for Vietnamese Americans</p>
+  <p style="margin-top:0.5rem;">
+    <a href="#privacy">Privacy Policy</a> &nbsp;·&nbsp;
+    <a href="#terms">Terms of Service</a> &nbsp;·&nbsp;
+    <a href="#refund">Refund Policy</a> &nbsp;·&nbsp;
+    <a href="mailto:support@viet-ai.app">support@viet-ai.app</a>
+  </p>
+</footer>
+
+</body>
+</html>
